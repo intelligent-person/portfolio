@@ -1,0 +1,117 @@
+@import "custom";
+@import "globals";
+@import "buttons";
+@import "modals";
+@import "cards";
+
+.section-padding {
+  padding: 50px 0;
+}
+.w-100 {
+  width: 100%;
+}
+.h-100 {
+  height: 100%;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.my-avatar {
+  position: relative;
+  padding-top: 100px;
+  height: 100%;
+
+  .ava {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    z-index: 10;
+    width: 80%;
+    transform: translate(-50%,0);
+  }
+
+  .ava-ellipse {
+    position: absolute;
+    top: -35px;
+    left: 15px;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .ava-node {
+    position: absolute;
+    top: 25%;
+    right: 28%;
+    z-index: 20;
+
+    background-color: $dark-blue;
+    border-radius: 100%;
+    width: 7%;
+  }
+  .ava-firebase {
+    position: absolute;
+    top: 43%;
+    right: 18%;
+    z-index: 20;
+
+    background-color: $dark-blue;
+    border-radius: 100%;
+    width: 10%;
+  }
+  .ava-react {
+    position: absolute;
+    bottom: 15%;
+    right: 20%;
+    z-index: 20;
+
+    background-color: $dark-blue;
+    border-radius: 100%;
+    width: 15%;
+  }
+}
+
+.carousel__viewport {
+  //perspective: 2000px;
+  padding: 25px 0;
+}
+
+.carousel__slide {
+  padding: 0 10px;
+}
+.carousel__slide--active {
+  transition: all .3s ease-in;
+  transform: rotateY(0) scale(1.15) !important;
+
+  .about-card {
+    border-color: $primary;
+  }
+}
+
+@media (max-width: $tablet) {
+  .my-avatar {
+    padding-top: 70px;
+    .ava {
+      transform: translate(-55%,0);
+    }
+  }
+  .carousel__slide--active {
+    transform: rotateY(0) scale(1) !important;
+  }
+  .section-padding {
+    padding: 25px 0;
+  }
+}
+@media (max-width: $mobile) {
+  .my-avatar {
+    padding-top: 40px;
+    .ava-ellipse {
+      left: 0;
+    }
+  }
+}
+
+
+

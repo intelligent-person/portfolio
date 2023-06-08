@@ -1,0 +1,126 @@
+.about-card {
+  padding: 35px 25px;
+  border: 3px solid $secondary;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  min-height: 320px;
+  max-width: 320px;
+
+  transition: all .3s linear;
+
+  .multi-img {
+    width: 100%;
+
+    img {
+      width: 32%;
+    }
+  }
+
+  .exp {
+    font-size: 128px;
+    line-height: 134px;
+  }
+}
+
+.icon-card {
+  background-color: $dark-blue;
+  border-radius: 16px;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-card {
+  margin-bottom: 60px;
+  .labels {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    padding: 0px 25px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+
+    &--left {
+      background-image: url("/TagLeft.svg");
+    }
+    &--right {
+      padding: 0 31px;
+      background-image: url("/TagRight.svg");
+    }
+  }
+  p, li {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 27px;
+  }
+  li {
+    list-style-type: disc;
+    margin-left: 15px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: $laptop) {
+
+  .icon-card {
+    height: 120px;
+    width: 120px;
+
+    img {
+      max-height: 75px;
+      max-width: 100px;
+    }
+  }
+}
+@media (max-width: $tablet) {
+  .about-card {
+    padding: 16px 12px;
+    border-width: 1px;
+    height: 160px;
+    gap: 0;
+
+    min-height: 160px;
+    max-width: 100%;
+
+    img  {
+      height: 50px;
+    }
+
+    .multi-img {
+      img {
+      }
+    }
+
+    .exp {
+      font-size: 54px;
+      line-height: 55px;
+    }
+  }
+
+  .icon-card {
+    height: 94px;
+    width: 94px;
+
+    img {
+      max-height: 55px;
+      max-width: 75px;
+    }
+  }
+
+  .experience-card {
+    p, li {
+      font-size: 15px;
+      line-height: 16px;
+    }
+  }
+}
