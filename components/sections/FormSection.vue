@@ -32,7 +32,7 @@ const send = () => {
     mail.send({
       from: email.value,
       subject: 'Contact form message | ' + name.value,
-      text: message.value,
+      text: email.value + ' | ' + message.value,
     })
     name.value = ''
     email.value = ''
