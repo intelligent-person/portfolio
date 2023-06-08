@@ -17,11 +17,13 @@ const props = defineProps({
 })
 
 onMounted(() => {
-  const xAnimation = $viewport.isGreaterOrEquals('tablet') ? (props.idx % 2 !== 1) ? 150 : -150 : 150
+  const animation = {
+    x: $viewport.isGreaterOrEquals('tablet') ? (props.idx % 2 !== 1) ? 150 : -150 : 0,
+    y: $viewport.isLessThan('tablet') ? 100 : 0
+  }
   gsap.registerPlugin(ScrollTrigger);
   gsap.from('.experience-card-' + props.idx, {
     opacity: 0,
-    x: xAnimation,
     duration: .5,
     ease: 'power2',
     scrollTrigger: {
@@ -29,6 +31,7 @@ onMounted(() => {
       start: 'top 70%',
       toggleActions: "restart pause reverse pause"
     },
+    ...animation
   })
 })
 </script>
