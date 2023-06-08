@@ -7,15 +7,21 @@ import ExperienceSection from "../components/sections/ExperienceSection";
 import FormSection from "../components/sections/FormSection";
 
 useHead({
-  title: 'Fullstack developer portfolio: Ivan Kupach',
+  title: 'Ivan Kupach | Fullstack developer portfolio | Іван Купач',
   meta: [
     {
       name: 'description',
-      content: 'Fullstack developer portfolio: React, Nodejs, Vue, TypeScript....'
+      content: 'Fullstack developer Ivan Kupach | portfolio: React, Nodejs, Vue, TypeScript...'
     },
+    { property: 'og:title', content: 'Ivan Kupach | Fullstack developer portfolio | Іван Купач' },
+    { property: 'og:description', content: 'Fullstack developer Ivan Kupach | portfolio: React, Nodejs, Vue, TypeScript...' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://www.ivankupach.com/' },
+    { property: 'og:locale', content: 'en_US' },
+    { property: 'og:image', content: 'https://www.ivankupach.com/Ivan.svg/' },
   ],
   htmlAttrs: { lang: 'en' },
-  link: [{ rel: 'canonical', href: 'https://ivankupach.vercel.app/' }],
+  link: [{ rel: 'canonical', href: 'https://www.ivankupach.com/' }],
 });
 useJsonld({
   '@context': 'https://schema.org',
@@ -25,8 +31,8 @@ useJsonld({
     "@type": 'Person',
     '@id': 'intelligent-person'
   },
-  'description': 'Fullstack developer portfolio: React, Nodejs, Vue, TypeScript....',
-  'url': 'https://ivankupach.vercel.app/',
+  'description': 'Fullstack developer Ivan Kupach | portfolio: React, Nodejs, Vue, TypeScript...',
+  'url': 'https://www.ivankupach.com/',
   'keywords': 'HTML, CSS, JS, TS, JavaScript, Typescript, React, Nextjs, Vue, Ivan Kupach'
 });
 useJsonld({

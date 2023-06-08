@@ -50,7 +50,7 @@ onMounted(() => {
                 alt="Open code"
                 class="inline-block h-11 lg:h-16 splitting-i"
             />
-            <span class="splitting">Kupach</span>
+            <span class="splitting">Kupach </span>
           </span>
           <span class="text-right block">
             <span class="splitting">Ivan</span>
