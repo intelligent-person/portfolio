@@ -70,7 +70,7 @@ onMounted(() => {
         </div>
       </div>
       <div class="my-avatar col-start-2 col-end-4">
-        <img class='ava' src="/Ivan.svg" alt="Avatar" width="100%"/>
+        <img class='ava' src="/Ivan.svg" alt="Ivan Kupach" width="100%"/>
         <img class="ava-ellipse" src="/Ellipse.png" alt="Avatar"/>
         <img class="ava-node" src="/NodeJs.svg" alt="Node.js"/>
         <img class="ava-firebase" src="/Firebase.svg" alt="Firebase"/>
