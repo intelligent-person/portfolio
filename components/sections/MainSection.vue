@@ -63,7 +63,7 @@ onMounted(() => {
         </h1>
         <div class="md:text-right">
           <h2 class="my-4 splitting">Software Engineer</h2>
-          <form method="get" action="/CV_Kupach.pdf">
+          <form method="get" action="/CV.pdf">
             <button class="mx-auto md:float-right btn-primary cursor-pointer" type="submit">
               <img src="/cloud_download.svg" alt="download resume"/>
               Resume
