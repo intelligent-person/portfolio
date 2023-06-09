@@ -31,10 +31,11 @@ const cards = [
 </script>
 
 <template>
-  <section class="section-padding container" id="about">
+  <section class="section-padding container relative" id="about">
     <h2 class="text-secondary text-center mb-10 lg:mb-24">
       AboutMe<span class="text-white">()</span>
     </h2>
+    <p class="opacity-0 absolute top-0">Hello, i am Ivan Kupach(Іван Купач). This is my Fullstack developer portfolio. I am an experienced developer from Ukraine (Sumy). I write both frontend and backend - so I'm a fullstack. My main technologies are react js, node js, vue, typescript, javascript and others. As a hobby, I like to play basketball, I was professionally involved in athletics. Was a 2-time champion of Ukraine. I will be glad to meet and chat.</p>
     <Carousel
       :autoplay="2000"
       :wrapAround="true"
@@ -54,7 +55,7 @@ const cards = [
         },
       }"
     >
-      <Slide v-for="card in cards" :key="card">
+      <Slide v-for="card in cards" :key="card.title">
         <AboutCard
           :title="card.title"
           :img-src="card.imgSrc"

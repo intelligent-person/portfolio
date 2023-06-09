@@ -13,6 +13,10 @@ useHead({
       name: 'description',
       content: 'Fullstack developer Ivan Kupach | portfolio: React, Nodejs, Vue, TypeScript...'
     },
+    {
+      name: 'keywords',
+      content: 'Ivan Kupach, Іван Купач, Fullstack, Frontend, Developer, HTML, CSS, JS, TS, JavaScript, Typescript, React, Nextjs, Vue'
+    },
     { property: 'og:title', content: 'Ivan Kupach | Fullstack developer portfolio | Іван Купач' },
     { property: 'og:description', content: 'Fullstack developer Ivan Kupach | portfolio: React, Nodejs, Vue, TypeScript...' },
     { property: 'og:type', content: 'website' },
@@ -26,14 +30,14 @@ useHead({
 useJsonld({
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  'name': 'Ivan Kupach | Portfolio',
+  'name': 'Ivan Kupach | Fullstack developer portfolio | Іван Купач',
   'author': {
     "@type": 'Person',
     '@id': 'intelligent-person'
   },
   'description': 'Fullstack developer Ivan Kupach | portfolio: React, Nodejs, Vue, TypeScript...',
   'url': 'https://www.ivankupach.com/',
-  'keywords': 'HTML, CSS, JS, TS, JavaScript, Typescript, React, Nextjs, Vue, Ivan Kupach'
+  'keywords': 'Ivan Kupach, Іван Купач, Fullstack, Frontend, Developer, HTML, CSS, JS, TS, JavaScript, Typescript, React, Nextjs, Vue'
 });
 useJsonld({
   '@context': 'https://schema.org',

@@ -100,14 +100,16 @@ onMounted(() => {
           Send email
         </button>
       </div>
-      <h3 class="text-primary uppercase text-center mb-6">
-        <span id='split-1' class="text-white">Or</span><br/>
-        Use social media<span id='split-2' class="text-white"> Links</span>
-      </h3>
-      <div class="flex justify-center gap-5">
-        <SocialLink type="WhatsApp"/>
-        <SocialLink type="Telegram"/>
-      </div>
+      <footer>
+        <h3 class="text-primary uppercase text-center mb-6">
+          <span id='split-1' class="text-white">Or</span><br/>
+          Use social media<span id='split-2' class="text-white"> Links</span>
+        </h3>
+        <div class="flex justify-center gap-5">
+          <SocialLink type="WhatsApp"/>
+          <SocialLink type="Telegram"/>
+        </div>
+      </footer>
     </form>
   </section>
 </template>

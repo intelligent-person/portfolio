@@ -1,7 +1,7 @@
 <template>
   <div class="flex gap-0.5 lg:gap-2 items-center">
     <img src="/OpenCodeSecondary.svg" alt="OpenCode"/>
-    <h3 class="text-primary"><slot/></h3>
+    <p class="text-primary about-title"><slot/></p>
     <img src="/CloseCodeSecondary.svg" alt="CloseCode"/>
   </div>
 </template>

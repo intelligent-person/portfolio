@@ -44,11 +44,11 @@ onMounted(() => {
     <div class="bg-dark absolute left-6 lg:left-1/2 h-10 w-10 border-primary border-solid border-4 rounded-full -translate-x-1/2 top-4"></div>
     <div class="experience-card w-5/6 lg:w-2/5 mt-4" :class="'experience-card-' + idx">
       <div class="flex">
-        <div class="labels labels--left">{{ experience.startedAt }}</div>
-        <div class="labels labels--right">{{ experience.endedAt }}</div>
+        <p class="labels labels--left">{{ experience.startedAt }}</p>
+        <p class="labels labels--right">{{ experience.endedAt }}</p>
       </div>
       <h2>{{ experience.companyName }}</h2>
-      <div class="position">(<span class="text-secondary">{{ experience.position }}</span>)</div>
+      <p>(<span class="text-secondary position">{{ experience.position }}</span>)</p>
       <p class="text-gray-400 my-3 lg:my-6">Responsibilities:</p>
       <ul>
         <li v-for="response in experience.responsibilities" :key="response">{{ response }}</li>

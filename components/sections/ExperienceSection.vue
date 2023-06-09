@@ -10,7 +10,10 @@ const positions = [
     responsibilities: [
         'Self-development of web applications',
         'Making independent decisions about the product',
-        'Development, testing, deployment, support'
+        'Development, testing, deployment, support',
+        'Working with CMS',
+        'Create a good SEO optimization',
+        'Make an awesome animation',
     ]
   },
   {

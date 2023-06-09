@@ -47,7 +47,7 @@ onMounted(() => {
           <span class="text-left block">
             <img
                 src="/OpenCode.svg"
-                alt="Open code"
+                alt="Іван Купач"
                 class="inline-block h-11 lg:h-16 splitting-i"
             />
             <span class="splitting">Kupach </span>
@@ -56,7 +56,7 @@ onMounted(() => {
             <span class="splitting">Ivan</span>
             <img
                 src="/CloseCode.svg"
-                alt="Close code"
+                alt="Fullstack | Frontend developer"
                 class="inline-block h-11 lg:h-16 splitting-i ml-4"
             />
           </span>
@@ -68,6 +68,7 @@ onMounted(() => {
             Resume
           </a>
         </div>
+        <p class="opacity-0">Ivan Kupach | Іван Купач | Frontend | Fullstack Developer</p>
       </div>
       <div class="my-avatar col-start-2 col-end-4">
         <img class='ava' src="/Ivan.svg" alt="Ivan Kupach" width="100%"/>
