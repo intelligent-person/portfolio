@@ -63,12 +63,14 @@ onMounted(() => {
         </h1>
         <div class="md:text-right">
           <h2 class="my-4 splitting">Software Engineer</h2>
-          <a href='/' class="mx-auto md:float-right btn-primary" download="CV_Kupach.pdf">
-            <img src="/cloud_download.svg" alt="download resume"/>
-            Resume
-          </a>
+          <form method="get" action="/CV_Kupach.pdf">
+            <button class="mx-auto md:float-right btn-primary cursor-pointer" type="submit">
+              <img src="/cloud_download.svg" alt="download resume"/>
+              Resume
+            </button>
+          </form>
         </div>
-        <p class="opacity-0">Ivan Kupach | Іван Купач | Frontend | Fullstack Developer</p>
+        <p class="opacity-0 md:mt-14">Ivan Kupach | Іван Купач | Frontend | Fullstack Developer</p>
       </div>
       <div class="my-avatar col-start-2 col-end-4">
         <img class='ava' src="/Ivan.svg" alt="Ivan Kupach" width="100%"/>
