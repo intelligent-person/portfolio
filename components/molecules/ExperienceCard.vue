@@ -48,7 +48,7 @@ onMounted(() => {
         <div class="labels labels--right">{{ experience.endedAt }}</div>
       </div>
       <h2>{{ experience.companyName }}</h2>
-      <h2>(<span class="text-secondary">{{ experience.position }}</span>)</h2>
+      <div class="position">(<span class="text-secondary">{{ experience.position }}</span>)</div>
       <p class="text-gray-400 my-3 lg:my-6">Responsibilities:</p>
       <ul>
         <li v-for="response in experience.responsibilities" :key="response">{{ response }}</li>
