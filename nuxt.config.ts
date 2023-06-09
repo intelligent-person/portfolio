@@ -6,12 +6,16 @@ export default defineNuxtConfig({
     }
   },
   plugins: [{ src: '~/plugins/vercel.ts', mode: 'client' }],
+  sitemap: {
+    siteUrl: 'https://www.ivankupach.com/',
+  },
   modules: [
     '@nuxtjs/tailwindcss',
     'nuxt-viewport',
     'nuxt-jsonld',
     '@nuxtjs/robots',
     'nuxt-security',
+    'nuxt-simple-sitemap',
     ['nuxt-mail', {
       message: {
         to: 'ivankupach@gmail.com',
