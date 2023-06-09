@@ -1,10 +1,9 @@
 <script setup>
 
-import {onMounted, watch} from "vue";
+import {onMounted} from "vue";
 import gsap from "gsap";
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import { useNuxtApp } from '#app'
-const { $viewport } = useNuxtApp()
+const viewport = useViewport()
 const props = defineProps({
   experience: {
     startedAt: Number,
@@ -18,8 +17,8 @@ const props = defineProps({
 
 onMounted(() => {
   const animation = {
-    x: $viewport.isGreaterOrEquals('tablet') ? (props.idx % 2 !== 1) ? 150 : -150 : 0,
-    y: $viewport.isLessThan('tablet') ? 100 : 0
+    x: viewport.isGreaterOrEquals('tablet') ? (props.idx % 2 !== 1) ? 150 : -150 : 0,
+    y: viewport.isLessThan('tablet') ? 100 : 0
   }
   gsap.registerPlugin(ScrollTrigger);
   gsap.from('.experience-card-' + props.idx, {

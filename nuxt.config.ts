@@ -9,14 +9,6 @@ export default defineNuxtConfig({
   sitemap: {
     siteUrl: 'https://www.ivankupach.com/',
   },
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-      routes: [
-        '/',
-      ]
-    }
-  },
   modules: [
     '@nuxtjs/tailwindcss',
     'nuxt-viewport',
