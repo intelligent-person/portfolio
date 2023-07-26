@@ -3,6 +3,18 @@ import ExperienceCard from "../molecules/ExperienceCard";
 
 const positions = [
   {
+    companyName: 'Kyros AI',
+    position: 'Frontend Engineer',
+    startedAt: 2023,
+    endedAt: 'Present',
+    responsibilities: [
+        'Design and optimization of the user interface',
+        'Communication and collaboration',
+        'Adapting to new technologies',
+        'Compliance with standards and best practices'
+    ]
+  },
+  {
     companyName: 'Solution Plus Limited',
     position: 'Software Engineer',
     startedAt: 2022,
