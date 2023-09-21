@@ -24,7 +24,7 @@ const cards = [
   },
   {
     title: 'Experience',
-    exp: new Date().getFullYear() - new Date(2020, 1).getFullYear(),
+    exp: new Date().getFullYear() - new Date(2019, 1).getFullYear(),
     description: 'Years'
   }
 ]
