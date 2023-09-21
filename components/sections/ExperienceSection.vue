@@ -31,7 +31,7 @@ const positions = [
   {
     companyName: 'QFinds',
     position: 'Frontend Developer',
-    startedAt: 2021,
+    startedAt: 2020,
     endedAt: 2022,
     responsibilities: [
        'Work with the Product Manager and Developers.',
@@ -47,8 +47,8 @@ const positions = [
   {
     companyName: 'Freelance',
     position: 'Software Engineer',
-    startedAt: 2020,
-    endedAt: 2021,
+    startedAt: 2019,
+    endedAt: 2020,
     responsibilities: [
         'Creating a forum for Sumy University students.',
         'Project architecture development.',
